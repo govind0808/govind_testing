@@ -10,11 +10,7 @@ pipeline {
 	  post {
         always {
 			junit keepLongStdio: true, testResults: 'results.xml'
-			publishHTML target: [
-				reportDir: '/var/lib/jenkins/workspace/unit-test-pipeline/',
-				reportFiles: 'index.html',
-				reportName: 'Coverage Report - Unit Test'
-			]	
+				
       }   
     }
   }
