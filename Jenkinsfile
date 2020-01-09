@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('test') {
       steps {
-         sh "python test_calc.py"
+        echo "hello world"
          }
 	 
   }
